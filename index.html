@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Roasted Delight - Full Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #dc2626; /* A strong, vibrant red for the entire page (Tailwind red-600) */
+            color: #fff; /* Default text color to white for contrast */
+        }
+        .menu-section-title {
+            @apply text-3xl md:text-4xl font-extrabold text-white mb-4 border-b-4 border-white pb-2;
+        }
+        .menu-item-name {
+            @apply font-semibold text-lg text-white;
+        }
+        .menu-item-price {
+            @apply font-bold text-lg text-white;
+        }
+        .card {
+            /* Increased rounding, added hover effect, and softer border */
+            @apply bg-red-800 rounded-2xl shadow-lg p-6 mb-6 border-b-4 border-white border-opacity-50 hover:scale-103 hover:shadow-2xl transition-all duration-300;
+        }
+        /* Remove bottom border from the last card to avoid unnecessary line at the very bottom before footer */
+        main section:last-child.card {
+            border-bottom: none;
+        }
+        .header-bg {
+            background: linear-gradient(to right, #991b1b, #ef4444); /* Darker red gradient for header (Tailwind red-800 to red-500) */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center">
+    <!-- Header Section -->
+    <header class="w-full header-bg text-white py-8 px-4 sm:px-6 lg:px-8 shadow-2xl rounded-b-xl">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-2 tracking-tight">
+                Lucky Roasted Delight
+            </h1>
+            <p class="text-xl md:text-2xl font-light opacity-90">
+                Authentic Flavors, Roasted to Perfection
+            </p>
+            <p class="text-sm mt-2 opacity-80">
+                Inquiries / Reservations: <a href="tel:+60162694651" class="font-bold underline">(+60) 16-269 4651</a>
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Menu Content -->
+    <main class="w-full max-w-4xl p-4 sm:p-6 lg:p-8 flex-grow">
+
+        <!-- All Meal Serve In Section -->
+        <section class="card text-center">
+            <h2 class="text-2xl font-bold text-white mb-4">All Meals Served With Your Choice Of:</h2>
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-xl font-medium text-white">
+                <p class="flex items-center"><span class="text-white mr-2">&#10003;</span> Egg Noodles</p>
+                <p class="flex items-center"><span class="text-white mr-2">&#10003;</span> Bihun</p>
+                <p class="flex items-center"><span class="text-white mr-2">&#10003;</span> Kue Teow</p>
+                <p class="flex items-center"><span class="text-white mr-2">&#10003;</span> Rice</p>
+            </div>
+        </section>
+
+        <!-- Roasted Delights Section -->
+        <section class="card">
+            <h2 class="menu-section-title">Roasted Delights</h2>
+            <!-- Three Images for Roasted Delights Section -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-6">
+                <img src="https://funntaste.com/wp-content/uploads/2022/05/char-siew-yoong-fun-n-taste-2.jpg"
+                     alt="Close-up of delicious Char Siew"
+                     class="w-full sm:w-1/3 h-48 rounded-lg shadow-md object-cover"
+                     onerror="this.onerror=null;this.src='https://placehold.co/250x192/FFDDC1/A00000?text=Char+Siew';">
+                <img src="https://kwokspots.com/wp-content/uploads/2024/08/crispy-pork-bellyl-2-480x270.png"
+                     alt="Crispy roasted pork belly (Sau Nyuk)"
+                     class="w-full sm:w-1/3 h-48 rounded-lg shadow-md object-cover"
+                     onerror="this.onerror=null;this.src='https://placehold.co/250x192/FFDDC1/A00000?text=Sau+Nyuk';">
+                <img src="https://live.staticflickr.com/65535/53156343511_60b5fc4a17_b.jpg"
+                     alt="Golden roasted duck"
+                     class="w-full sm:w-1/3 h-48 rounded-lg shadow-md object-cover"
+                     onerror="this.onerror=null;this.src='https://placehold.co/250x192/FFDDC1/A00000?text=Roasted+Duck';">
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Char Siew / Sau Nyuk -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Char Siew / Sau Nyuk</h3>
+                    <p class="text-white mb-4">Our succulent BBQ pork (Char Siew) and crispy roasted pork belly (Sau Nyuk), marinated and roasted to perfection.</p>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">C Char Siew</span>
+                            <span class="menu-item-price">RM 10.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">S Sau Nyuk</span>
+                            <span class="menu-item-price">RM 10.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">CS Char Siew + Sau Nyuk</span>
+                            <span class="menu-item-price">RM 12.00</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Herbal Roasted Duck -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Herbal Roasted Duck</h3>
+                    <p class="text-white mb-4">Tender duck infused with aromatic herbs, roasted until golden brown and incredibly flavorful.</p>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">1 Duck</span>
+                            <span class="menu-item-price">RM 10.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">1C Duck + Char Siew</span>
+                            <span class="menu-item-price">RM 12.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">1S Duck + Sau Nyuk</span>
+                            <span class="menu-item-price">RM 12.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">1CS Duck + Char Siew + Sau Nyuk</span>
+                            <span class="menu-item-price">RM 15.00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chicken & Drumstick Section -->
+        <section class="card">
+            <h2 class="menu-section-title">Chicken Specialties</h2>
+            <!-- Image for Chicken Specialties Section -->
+            <img src="https://images.deliveryhero.io/image/fd-sg/products/15055526.jpg?width=%s"
+                 alt="Whole roasted chicken with crispy skin"
+                 class="w-3/4 h-48 rounded-lg shadow-md object-cover mx-auto mb-6"
+                 onerror="this.onerror=null;this.src='https://placehold.co/800x192/FFDDC1/A00000?text=Image+Not+Found';">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Roasted / Steam Chicken -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Roasted / Steam Chicken</h3>
+                    <p class="text-white mb-4">Choose between our perfectly roasted chicken with crispy skin or our tender, juicy steamed chicken.</p>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">A Chicken</span>
+                            <span class="menu-item-price">RM 8.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">AI Chicken + Duck</span>
+                            <span class="menu-item-price">RM 12.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">AC Chicken + Char Siew</span>
+                            <span class="menu-item-price">RM 12.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">AS Chicken + Sau Nyuk</span>
+                            <span class="menu-item-price">RM 12.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">ACS Chicken + Char Siew + Sau Nyuk</span>
+                            <span class="menu-item-price">RM 15.00</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Herbal Roasted Duck Drumstick -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Herbal Roasted Duck Drumstick</h3>
+                    <p class="text-white mb-4">A flavorful and convenient option for a quick and satisfying meal.</p>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">DK Drumstick</span>
+                            <span class="menu-item-price">RM 12.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">DKC Drumstick + Char Siew</span>
+                            <span class="menu-item-price">RM 15.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">DKS Drumstick + Sau Nyuk</span>
+                            <span class="menu-item-price">RM 15.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">DKCS Drumstick + Char Siew + Sau Nyuk</span>
+                            <span class="menu-item-price">RM 18.00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Drinks Section -->
+        <section class="card text-white">
+            <h2 class="menu-section-title text-white border-white text-5xl md:text-6xl">Refreshing Drinks</h2>
+            <!-- Removed: Image for Drinks Section -->
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-4">
+                <!-- Hot Drinks -->
+                <div>
+                    <h3 class="text-3xl font-bold text-white mb-2">Hot Drinks</h3>
+                    <ul class="space-y-1">
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Kopi O</span>
+                            <span class="menu-item-price">RM 2.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Kopi O Kosong</span>
+                            <span class="menu-item-price">RM 2.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Kopi C</span>
+                            <span class="menu-item-price">RM 3.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Kopi</span>
+                            <span class="menu-item-price">RM 2.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Teh O</span>
+                            <span class="menu-item-price">RM 2.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Teh O Kosong</span>
+                            <span class="menu-item-price">RM 2.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Teh C</span>
+                            <span class="menu-item-price">RM 3.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Teh Tarik</span>
+                            <span class="menu-item-price">RM 3.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Nescafe O</span>
+                            <span class="menu-item-price">RM 2.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Nescafe O Kosong</span>
+                            <span class="menu-item-price">RM 2.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Nescafe C</span>
+                            <span class="menu-item-price">RM 3.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Nescafe Tarik</span>
+                            <span class="menu-item-price">RM 3.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Lemon Tea</span>
+                            <span class="menu-item-price">RM 2.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Lemon Sui</span>
+                            <span class="menu-item-price">RM 2.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Kiat Chai</span>
+                            <span class="menu-item-price">RM 2.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Milo</span>
+                            <span class="menu-item-price">RM 3.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Milo O</span>
+                            <span class="menu-item-price">RM 2.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Milo C</span>
+                            <span class="menu-item-price">RM 3.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Chinese Tea</span>
+                            <span class="menu-item-price">RM 0.50</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Cold Drinks -->
+                <div>
+                    <h3 class="text-3xl font-bold text-white mb-2">Cold Drinks</h3>
+                    <ul class="space-y-1">
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Kopi O</span>
+                            <span class="menu-item-price">RM 3.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Kopi O Kosong</span>
+                            <span class="menu-item-price">RM 3.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Kopi C</span>
+                            <span class="menu-item-price">RM 3.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Kopi</span>
+                            <span class="menu-item-price">RM 3.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Teh O</span>
+                            <span class="menu-item-price">RM 3.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Teh O Kosong</span>
+                            <span class="menu-item-price">RM 2.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Teh C</span>
+                            <span class="menu-item-price">RM 3.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Teh Tarik</span>
+                            <span class="menu-item-price">RM 4.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Nescafe O</span>
+                            <span class="menu-item-price">RM 3.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Nescafe O Kosong</span>
+                            <span class="menu-item-price">RM 2.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Nescafe C</span>
+                            <span class="menu-item-price">RM 3.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Nescafe Tarik</span>
+                            <span class="menu-item-price">RM 4.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Lemon Tea</span>
+                            <span class="menu-item-price">RM 3.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Lemon Sui</span>
+                            <span class="menu-item-price">RM 3.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Kiat Chai</span>
+                            <span class="menu-item-price">RM 3.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Milo</span>
+                            <span class="menu-item-price">RM 4.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Milo O</span>
+                            <span class="menu-item-price">RM 3.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Milo C</span>
+                            <span class="menu-item-price">RM 3.50</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Chinese Tea</span>
+                            <span class="menu-item-price">RM 1.00</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="menu-item-name">Minuman Tin</span>
+                            <span class="menu-item-price">RM 3.00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add-on Section -->
+        <section class="card">
+            <h2 class="menu-section-title text-5xl md:text-6xl">Add-Ons</h2>
+            <ul class="space-y-2">
+                <li class="flex justify-between items-center">
+                    <span class="menu-item-name">P Portion</span>
+                    <span class="menu-item-price">RM 3.00</span>
+                </li>
+                <li class="flex justify-between items-center">
+                    <span class="menu-item-name">M Noodles</span>
+                    <span class="menu-item-price">RM 1.00</span>
+                </li>
+                <li class="flex justify-between items-center">
+                    <span class="menu-item-name">Additional Rice</span>
+                    <span class="menu-item-price">RM 2.00</span>
+                </li>
+                <li class="flex justify-between items-center">
+                    <span class="menu-item-name">Additional Noodles</span>
+                    <span class="menu-item-price">RM 3.50</span>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="w-full bg-gray-800 text-white py-6 px-4 sm:px-6 lg:px-8 text-center rounded-t-xl mt-8">
+        <p class="text-lg font-light mb-2">Thank you for choosing Lucky Roasted Delight!</p>
+        <p class="text-sm opacity-80">&copy; 2025 Lucky Roasted Delight. All rights reserved.</p>
+    </footer>
+</body>
+</html>
